@@ -43,6 +43,13 @@
     <% end %>
   </div>
 
+  <div class="alpha omega twelve columns">
+    <%= f.field_container :slide do %>
+      <%= f.label :slide, t(:slide) %><br />
+      <%= f.check_box(:slide) %>
+    <% end %>
+  </div>
+
   <div class="alpha six columns">
     <%= f.field_container :image do %>
       <%= f.label :image, t(:image) %> <i>(<%= t('spree_slider.image_tip') %>)</i><br />
@@ -57,5 +64,4 @@
       <% end %>
     <% end %>
   </div>
-
 </div>
